@@ -1,0 +1,213 @@
+Starting experiments for data size: 100000
+--- Library Algorithm Tests ---
+Running: Library Scan (Default)         | Size: 100000 | Time: 3.3933 ms
+Running: Library Scan (seq)             | Size: 100000 | Time: 2.6930 ms
+Running: Library Scan (par)             | Size: 100000 | Time: 3.0414 ms
+Running: Library Scan (par_unseq)       | Size: 100000 | Time: 0.8532 ms
+
+--- Custom Parallel Scan Analysis ---
+Detected 12 hardware threads.
+Running: Custom Parallel Scan (K=1)     | Size: 100000 | Time: 7.6950 ms
+Running: Custom Parallel Scan (K=2)     | Size: 100000 | Time: 5.9563 ms
+Running: Custom Parallel Scan (K=3)     | Size: 100000 | Time: 6.8923 ms
+Running: Custom Parallel Scan (K=4)     | Size: 100000 | Time: 7.7713 ms
+Running: Custom Parallel Scan (K=5)     | Size: 100000 | Time: 6.7883 ms
+Running: Custom Parallel Scan (K=6)     | Size: 100000 | Time: 6.2212 ms
+Running: Custom Parallel Scan (K=7)     | Size: 100000 | Time: 7.1071 ms
+Running: Custom Parallel Scan (K=8)     | Size: 100000 | Time: 7.3182 ms
+Running: Custom Parallel Scan (K=9)     | Size: 100000 | Time: 9.1929 ms
+Running: Custom Parallel Scan (K=10)    | Size: 100000 | Time: 9.0228 ms
+Running: Custom Parallel Scan (K=11)    | Size: 100000 | Time: 8.9119 ms
+Running: Custom Parallel Scan (K=12)    | Size: 100000 | Time: 8.2619 ms
+Running: Custom Parallel Scan (K=13)    | Size: 100000 | Time: 7.9422 ms
+Running: Custom Parallel Scan (K=14)    | Size: 100000 | Time: 7.0987 ms
+Running: Custom Parallel Scan (K=15)    | Size: 100000 | Time: 6.7305 ms
+Running: Custom Parallel Scan (K=16)    | Size: 100000 | Time: 7.6090 ms
+Running: Custom Parallel Scan (K=17)    | Size: 100000 | Time: 7.4858 ms
+Running: Custom Parallel Scan (K=18)    | Size: 100000 | Time: 8.0006 ms
+Running: Custom Parallel Scan (K=19)    | Size: 100000 | Time: 6.7054 ms
+Running: Custom Parallel Scan (K=20)    | Size: 100000 | Time: 7.9078 ms
+Running: Custom Parallel Scan (K=21)    | Size: 100000 | Time: 7.8612 ms
+Running: Custom Parallel Scan (K=22)    | Size: 100000 | Time: 7.0275 ms
+Running: Custom Parallel Scan (K=23)    | Size: 100000 | Time: 6.3448 ms
+Running: Custom Parallel Scan (K=24)    | Size: 100000 | Time: 5.8307 ms
+
+Custom Algorithm Performance Table:
+-----------------------------------
+| K     | Time (ms)          |
+-----------------------------------
+| 1     | 7.6950             |
+| 2     | 5.9563             |
+| 3     | 6.8923             |
+| 4     | 7.7713             |
+| 5     | 6.7883             |
+| 6     | 6.2212             |
+| 7     | 7.1071             |
+| 8     | 7.3182             |
+| 9     | 9.1929             |
+| 10    | 9.0228             |
+| 11    | 8.9119             |
+| 12    | 8.2619             |
+| 13    | 7.9422             |
+| 14    | 7.0987             |
+| 15    | 6.7305             |
+| 16    | 7.6090             |
+| 17    | 7.4858             |
+| 18    | 8.0006             |
+| 19    | 6.7054             |
+| 20    | 7.9078             |
+| 21    | 7.8612             |
+| 22    | 7.0275             |
+| 23    | 6.3448             |
+| 24    | 5.8307             | <- BEST
+-----------------------------------
+
+Summary:
+Best performance achieved at K = 24 with 5.8307 ms.
+Hardware concurrency: 12
+Best K vs Cores Ratio: 2.00
+Best K is greater than the number of hardware threads.
+
+
+Starting experiments for data size: 1000000
+--- Library Algorithm Tests ---
+Running: Library Scan (Default)         | Size: 1000000 | Time: 17.3962 ms
+Running: Library Scan (seq)             | Size: 1000000 | Time: 10.3037 ms
+Running: Library Scan (par)             | Size: 1000000 | Time: 9.6282 ms
+Running: Library Scan (par_unseq)       | Size: 1000000 | Time: 5.5263 ms
+
+--- Custom Parallel Scan Analysis ---
+Detected 12 hardware threads.
+Running: Custom Parallel Scan (K=1)     | Size: 1000000 | Time: 16.4021 ms
+Running: Custom Parallel Scan (K=2)     | Size: 1000000 | Time: 11.9439 ms
+Running: Custom Parallel Scan (K=3)     | Size: 1000000 | Time: 11.5590 ms
+Running: Custom Parallel Scan (K=4)     | Size: 1000000 | Time: 9.0112 ms
+Running: Custom Parallel Scan (K=5)     | Size: 1000000 | Time: 7.9551 ms
+Running: Custom Parallel Scan (K=6)     | Size: 1000000 | Time: 7.8657 ms
+Running: Custom Parallel Scan (K=7)     | Size: 1000000 | Time: 6.9301 ms
+Running: Custom Parallel Scan (K=8)     | Size: 1000000 | Time: 7.1487 ms
+Running: Custom Parallel Scan (K=9)     | Size: 1000000 | Time: 7.0769 ms
+Running: Custom Parallel Scan (K=10)    | Size: 1000000 | Time: 6.0238 ms
+Running: Custom Parallel Scan (K=11)    | Size: 1000000 | Time: 5.8981 ms
+Running: Custom Parallel Scan (K=12)    | Size: 1000000 | Time: 6.7928 ms
+Running: Custom Parallel Scan (K=13)    | Size: 1000000 | Time: 6.7204 ms
+Running: Custom Parallel Scan (K=14)    | Size: 1000000 | Time: 6.4944 ms
+Running: Custom Parallel Scan (K=15)    | Size: 1000000 | Time: 7.4202 ms
+Running: Custom Parallel Scan (K=16)    | Size: 1000000 | Time: 6.9677 ms
+Running: Custom Parallel Scan (K=17)    | Size: 1000000 | Time: 7.3235 ms
+Running: Custom Parallel Scan (K=18)    | Size: 1000000 | Time: 6.9878 ms
+Running: Custom Parallel Scan (K=19)    | Size: 1000000 | Time: 7.3246 ms
+Running: Custom Parallel Scan (K=20)    | Size: 1000000 | Time: 6.7722 ms
+Running: Custom Parallel Scan (K=21)    | Size: 1000000 | Time: 6.9901 ms
+Running: Custom Parallel Scan (K=22)    | Size: 1000000 | Time: 7.1489 ms
+Running: Custom Parallel Scan (K=23)    | Size: 1000000 | Time: 6.8666 ms
+Running: Custom Parallel Scan (K=24)    | Size: 1000000 | Time: 7.6026 ms
+
+Custom Algorithm Performance Table:
+-----------------------------------
+| K     | Time (ms)          |
+-----------------------------------
+| 1     | 16.4021            |
+| 2     | 11.9439            |
+| 3     | 11.5590            |
+| 4     | 9.0112             |
+| 5     | 7.9551             |
+| 6     | 7.8657             |
+| 7     | 6.9301             |
+| 8     | 7.1487             |
+| 9     | 7.0769             |
+| 10    | 6.0238             |
+| 11    | 5.8981             | <- BEST
+| 12    | 6.7928             |
+| 13    | 6.7204             |
+| 14    | 6.4944             |
+| 15    | 7.4202             |
+| 16    | 6.9677             |
+| 17    | 7.3235             |
+| 18    | 6.9878             |
+| 19    | 7.3246             |
+| 20    | 6.7722             |
+| 21    | 6.9901             |
+| 22    | 7.1489             |
+| 23    | 6.8666             |
+| 24    | 7.6026             |
+-----------------------------------
+
+Summary:
+Best performance achieved at K = 11 with 5.8981 ms.
+Hardware concurrency: 12
+Best K vs Cores Ratio: 0.92
+Best K is less than the number of hardware threads.
+
+
+Starting experiments for data size: 10000000
+--- Library Algorithm Tests ---
+Running: Library Scan (Default)         | Size: 10000000 | Time: 112.3628 ms
+Running: Library Scan (seq)             | Size: 10000000 | Time: 112.4642 ms
+Running: Library Scan (par)             | Size: 10000000 | Time: 110.1433 ms
+Running: Library Scan (par_unseq)       | Size: 10000000 | Time: 53.9605 ms
+
+--- Custom Parallel Scan Analysis ---
+Detected 12 hardware threads.
+Running: Custom Parallel Scan (K=1)     | Size: 10000000 | Time: 155.8721 ms
+Running: Custom Parallel Scan (K=2)     | Size: 10000000 | Time: 99.3752 ms
+Running: Custom Parallel Scan (K=3)     | Size: 10000000 | Time: 86.5530 ms
+Running: Custom Parallel Scan (K=4)     | Size: 10000000 | Time: 82.1353 ms
+Running: Custom Parallel Scan (K=5)     | Size: 10000000 | Time: 64.8104 ms
+Running: Custom Parallel Scan (K=6)     | Size: 10000000 | Time: 57.5864 ms
+Running: Custom Parallel Scan (K=7)     | Size: 10000000 | Time: 52.6352 ms
+Running: Custom Parallel Scan (K=8)     | Size: 10000000 | Time: 51.9023 ms
+Running: Custom Parallel Scan (K=9)     | Size: 10000000 | Time: 49.6291 ms
+Running: Custom Parallel Scan (K=10)    | Size: 10000000 | Time: 49.2041 ms
+Running: Custom Parallel Scan (K=11)    | Size: 10000000 | Time: 45.7164 ms
+Running: Custom Parallel Scan (K=12)    | Size: 10000000 | Time: 44.9892 ms
+Running: Custom Parallel Scan (K=13)    | Size: 10000000 | Time: 49.2121 ms
+Running: Custom Parallel Scan (K=14)    | Size: 10000000 | Time: 47.9703 ms
+Running: Custom Parallel Scan (K=15)    | Size: 10000000 | Time: 47.8243 ms
+Running: Custom Parallel Scan (K=16)    | Size: 10000000 | Time: 48.6361 ms
+Running: Custom Parallel Scan (K=17)    | Size: 10000000 | Time: 45.9550 ms
+Running: Custom Parallel Scan (K=18)    | Size: 10000000 | Time: 47.6637 ms
+Running: Custom Parallel Scan (K=19)    | Size: 10000000 | Time: 45.5888 ms
+Running: Custom Parallel Scan (K=20)    | Size: 10000000 | Time: 46.3597 ms
+Running: Custom Parallel Scan (K=21)    | Size: 10000000 | Time: 47.1381 ms
+Running: Custom Parallel Scan (K=22)    | Size: 10000000 | Time: 45.1400 ms
+Running: Custom Parallel Scan (K=23)    | Size: 10000000 | Time: 47.4667 ms
+Running: Custom Parallel Scan (K=24)    | Size: 10000000 | Time: 45.6345 ms
+
+Custom Algorithm Performance Table:
+-----------------------------------
+| K     | Time (ms)          |
+-----------------------------------
+| 1     | 155.8721           |
+| 2     | 99.3752            |
+| 3     | 86.5530            |
+| 4     | 82.1353            |
+| 5     | 64.8104            |
+| 6     | 57.5864            |
+| 7     | 52.6352            |
+| 8     | 51.9023            |
+| 9     | 49.6291            |
+| 10    | 49.2041            |
+| 11    | 45.7164            |
+| 12    | 44.9892            | <- BEST
+| 13    | 49.2121            |
+| 14    | 47.9703            |
+| 15    | 47.8243            |
+| 16    | 48.6361            |
+| 17    | 45.9550            |
+| 18    | 47.6637            |
+| 19    | 45.5888            |
+| 20    | 46.3597            |
+| 21    | 47.1381            |
+| 22    | 45.1400            |
+| 23    | 47.4667            |
+| 24    | 45.6345            |
+-----------------------------------
+
+Summary:
+Best performance achieved at K = 12 with 44.9892 ms.
+Hardware concurrency: 12
+Best K vs Cores Ratio: 1.00
+Best K is equal to the number of hardware threads.
+
+
